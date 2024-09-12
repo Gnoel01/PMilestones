@@ -38,3 +38,18 @@ cursor.execute("SELECT * FROM phone")
 
 results = cursor.fetchall()
 print(results)
+
+# update
+
+cursor.execute("UPDATE phone SET phone_number = 7195985555 WHERE first_name = 'Kevin'")
+
+# delete
+
+cursor.execute("DELETE FROM phone WHERE first_name = 'Brian'")
+
+# get results
+
+cursor.execute("SELECT * FROM phone")
+
+results = cursor.fetchall()
+print(results)
